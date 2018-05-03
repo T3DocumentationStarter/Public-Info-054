@@ -144,8 +144,8 @@ Martin_
    underscores, will consume the next of the following links.
 
 __ https://docs.typo3.org/typo3cms/RenderTYPO3DocumentationGuide/ProjectsOnGithub/Index.html
-__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/reStructuredText/Index.html
-__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-054/reStructuredText/Index.html
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-054/
 
 
 ---------------------------------------------
@@ -247,8 +247,8 @@ Martin_
    gebildet wird, verbraucht den nächsten aus dieser Liste.
 
 __ https://docs.typo3.org/typo3cms/RenderTYPO3DocumentationGuide/ProjectsOnGithub/Index.html
-__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/reStructuredText/Index.html
-__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-000/
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-054/reStructuredText/Index.html
+__ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-054/
 
 
 
