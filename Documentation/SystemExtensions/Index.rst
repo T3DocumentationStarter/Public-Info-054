@@ -33,7 +33,8 @@ It is absolutely recommended to use the typo3-console-Extension by Helmut Hummel
 **Install the Extension:**
 
 .. code-block:: php
-  composer require helhum/typo3-console
+
+   composer require helhum/typo3-console
   
 After that you can user the console to install and activate new extensions.
 
@@ -41,9 +42,10 @@ After that you can user the console to install and activate new extensions.
 **Here an example:**
 
 .. code-block:: php
-  composer require typo3/cms-info
-  vendor/bin/typo3cms extension:setupactive info
-  vendor/bin/typo3cms install:generatepackagestates
+
+   composer require typo3/cms-info
+   vendor/bin/typo3cms extension:setupactive info
+   vendor/bin/typo3cms install:generatepackagestates
 
 about
 ~~~~~~~~~~~~~~~~~~~
