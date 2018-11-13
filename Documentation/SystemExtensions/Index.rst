@@ -7,8 +7,12 @@ System Extensions
 
 **Übersicht und Erläuterung der Systemextensions von TYPO3 in der Version 9.5. LTS**
 
-Bestandteil minimal-Installation:
+Required extensions
 ---------------------------------
+
+These required extensions are part of the minimal-installation-package.
+
+
 backend
 ~~~~~~~~~~~~~~~~~~~
 core
