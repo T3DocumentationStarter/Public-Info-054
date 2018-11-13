@@ -9,20 +9,20 @@ System Extensions
 
 Bestandteil minimal-Installation:
 ---------------------------------
--backend
--core
--extbase
--extensionmanager
--felogin
--filelist
--fluid
--form
--frontend
--impexp
--indexed_search
--install
--recordlist
--rte_ckeditor
+- backend
+- core
+- extbase
+- extensionmanager
+- felogin
+- filelist
+- fluid
+- form
+- frontend
+- impexp
+- indexed_search
+- install
+- recordlist
+- rte_ckeditor
 
 
 Additional extensions:
