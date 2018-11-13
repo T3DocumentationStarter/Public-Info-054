@@ -5,9 +5,9 @@
 System Extensions
 =================
 
-**Übersicht und Erläuterung der Systemextensions von TYPO3 in der Version 9.5. LTS**
+**Overview and introduction of the TYPO3 system-extentions**
 
-Required extensions
+Required system-extensions
 ---------------------------------
 
 These required extensions are part of the minimal-installation-package.
@@ -42,7 +42,7 @@ recordlist
 rte_ckeditor
 ~~~~~~~~~~~~~~~~~~~
 
-Additional extensions
+Optional system-extensions
 ----------------------
 **General Info**
 
