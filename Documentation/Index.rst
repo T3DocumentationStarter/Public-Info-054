@@ -21,9 +21,9 @@
 .. The following, first section (= headline) is the 'Document Title'.
 
 
-======================
-My Public Info Project
-======================
+=================================
+My own public TYPO3 Documentation
+=================================
 
 
 .. The following is 'field list' which is rendered as a horizontal table.
