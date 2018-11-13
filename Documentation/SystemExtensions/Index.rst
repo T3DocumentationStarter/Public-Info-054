@@ -42,7 +42,7 @@ recordlist
 rte_ckeditor
 ~~~~~~~~~~~~~~~~~~~
 
-Additional extensions:
+Additional extensions
 ----------------------
 **General Info**
 
