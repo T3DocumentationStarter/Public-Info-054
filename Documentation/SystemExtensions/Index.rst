@@ -33,19 +33,23 @@ General Info
 It is absolutely recommended to use the typo3-console-Extension by Helmut Hummel in Composermode-Installations.
 
 **Install the Extension:**
-composer require helhum/typo3-console
+    .. code-block:: php
+  composer require helhum/typo3-console
 After that you can user the console to install and activate new extensions.
 
 
 **Here an example:**
-composer require typo3/cms-info
-vendor/bin/typo3cms extension:setupactive info
-vendor/bin/typo3cms install:generatepackagestates
+    .. code-block:: php
+  composer require typo3/cms-info
+  vendor/bin/typo3cms extension:setupactive info
+  vendor/bin/typo3cms install:generatepackagestates
 
 about
 ~~~~~~~~~~~~~~~~~~~
 Shows info about TYPO3, installed extensions and a separate module for available modules.
 
+.. figure:: Images/AboutModule.png
+   :alt: About-Module in the backend
 
 
 adminpanel
