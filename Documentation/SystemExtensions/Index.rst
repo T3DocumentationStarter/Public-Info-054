@@ -5,48 +5,60 @@
 System Extensions
 =================
 
-Übersicht und Erläuterung der Systemextensions von TYPO3 in der Version 9.5. LTS
+**Übersicht und Erläuterung der Systemextensions von TYPO3 in der Version 9.5. LTS**
+
 Bestandteil minimal-Installation:
-backend
-core
-extbase
-extensionmanager
-felogin
-filelist
-fluid
-form
-frontend
-impexp
-indexed_search
-install
-recordlist
-rte_ckeditor
+---------------------------------
+- backend
+- core
+- extbase
+- extensionmanager
+- felogin
+- filelist
+- fluid
+- form
+- frontend
+- impexp
+- indexed_search
+- install
+- recordlist
+- rte_ckeditor
 
 
 Additional extensions:
+----------------------
 General Info
+~~~~~~~~~~~~~~~~~~~
+
 It is absolutely recommended to use the typo3-console-Extension by Helmut Hummel in Composermode-Installations.
 
-Install the Extension:
-composer require helhum/typo3-console
+**Install the Extension:**
+    .. code-block:: php
+  composer require helhum/typo3-console
 After that you can user the console to install and activate new extensions.
 
 
-Here an example:
-composer require typo3/cms-info
-vendor/bin/typo3cms extension:setupactive info
-vendor/bin/typo3cms install:generatepackagestates
+**Here an example:**
+    .. code-block:: php
+  composer require typo3/cms-info
+  vendor/bin/typo3cms extension:setupactive info
+  vendor/bin/typo3cms install:generatepackagestates
 
 about
+~~~~~~~~~~~~~~~~~~~
 Shows info about TYPO3, installed extensions and a separate module for available modules.
 
+.. figure:: Images/AboutModule.png
+   :alt: About-Module in the backend
 
 
 adminpanel
+~~~~~~~~~~~~~~~~~~~
 The TYPO3 admin panel provides a panel with additional functionality in the frontend (Debugging, Caching, Preview...
 
 
 belog
+~~~~~~~~~~~~~~~~~~~
 Displays backend log, both per page and system wide. Available as the module Tools>Log (system wide overview) and Web>Info/Log (page relative overview).
 
 
