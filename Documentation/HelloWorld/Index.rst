@@ -2,7 +2,7 @@
 .. include:: ../Includes.txt
 
 ============
-Hello World!
+Hello World
 ============
 
 Here I go!
