@@ -32,29 +32,62 @@ Here added the table-structure. Using 9.5 LTS I dont need to configure system-fi
     # Table structure for table 'tx_events_domain_model_eventlocation'
     #
     CREATE TABLE tx_events_domain_model_eventlocation (
-        title 			varchar(255) DEFAULT '' NOT NULL,
+        title varchar(255) DEFAULT '' NOT NULL,
     );
 
     #
     # Table structure for table 'tx_events_domain_model_event'
     #
     CREATE TABLE tx_events_domain_model_event (
-        title 			varchar(255) DEFAULT '' NOT NULL,
-        subheadline 	varchar(255) DEFAULT '' NOT NULL,
-        teaser 			text,
-        description 	text,
-        images 			int(11) DEFAULT '0' NOT NULL,
-        files 			int(11) DEFAULT '0' NOT NULL,
-        link 			varchar(255) DEFAULT '' NOT NULL,
-        startdate 		int(11) unsigned DEFAULT '0' NOT NULL,
-        enddate 		int(11) unsigned DEFAULT '0' NOT NULL,
-        eventtype 		int(11) DEFAULT '0' NOT NULL,
-        eventlocation 	int(11) DEFAULT '0' NOT NULL,
+        title varchar(255) DEFAULT '' NOT NULL,
+        subheadline varchar(255) DEFAULT '' NOT NULL,
+        teaser text,
+        description text,
+        images int(11) DEFAULT '0' NOT NULL,
+        files int(11) DEFAULT '0' NOT NULL,
+        link varchar(255) DEFAULT '' NOT NULL,
+        startdate int(11) unsigned DEFAULT '0' NOT NULL,
+        enddate int(11) unsigned DEFAULT '0' NOT NULL,
+        eventtype int(11) DEFAULT '0' NOT NULL,
+        eventlocation int(11) DEFAULT '0' NOT NULL,
     );
 
+event.php (parent model)
+===================
 
+Here I need to add the field and the getter-/setter.methods for the connection to the child
 
+.. code-block:: php
 
+    /**
+     * eventlocation
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\SvenWiener\Events\Domain\Model\Eventlocation>
+     * @cascade remove
+     * @lazy
+     */
+    protected $eventlocation = '';
+
+    /**
+     * Get Eventlocation
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage
+     */
+    public function getEventlocation()
+    {
+        return $this->eventlocation;
+    }
+
+    /**
+     * Set Eventlocation
+     *
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $eventlocation
+     * @return void
+     */
+    public function setEventlocation($eventlocation)
+    {
+        $this->eventlocation = $eventlocation;
+    }
 
 
 
