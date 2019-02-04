@@ -256,6 +256,7 @@ __ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-I
 
    Sitemap/Index
    SystemExtensions/Index
+   Extbase/Index
    Knowledgebase/Index
    Linktargets/Index
 

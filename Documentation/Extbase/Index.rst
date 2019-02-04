@@ -2,7 +2,7 @@
 .. include:: ../Includes.txt
 
 =================
-Exbase
+Extbase
 =================
 
 **Subtitle**
