@@ -408,7 +408,7 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
         ],
     ],
 
-1:n-relation
+n:n-relation
 ~~~~~~~~~~~~~~~~~~~
 
 To realize the 1:n-realation, which means that one parent object is related to one or more multiple to other parent objects related child objects, we need to configure another renderType in the TCA-configuration of the parent object.
@@ -433,7 +433,7 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
         ],
     ],
 
-Of courde we need to add the new needed mm-table in the sql-declaration file
+Of course we need to add the new needed mm-table in the sql-declaration file
 
 exttables.sql
 ===================
