@@ -217,6 +217,9 @@ Here I add the TCA-configuration at the parent object
     ],
 
 As you can see, it is needed to configure the foreign_table in events. This configuration makes it possible to add a 1:1-relation. so we don't have any mm-table. We only have the events-table and the eventlocation-table. So one Location belongs to 1 event.
+The type inline makes it possible to create contents direct in the parent object. (https://docs.typo3.org/typo3cms/TCAReference/ColumnsConfig/Type/Inline.html)
+
+
 
 tx_events_domain_model_eventlocation.php
 ===================
@@ -374,3 +377,33 @@ After all these configuration we got the possibility to add childobjects direct 
 
 .. figure:: ../Images/eventlocation_add.png
    :alt: Add-Button in backend
+
+
+1:n-relation
+~~~~~~~~~~~~~~~~~~~
+
+To realize the 1:n-realation, which means that one parent object is related to one or more multiple to other parent objects related child objects, we need to configure another renderType in the TCA-configuration of the parent object.
+
+tx_events_domain_model_event.php
+===================
+
+Afterwards we need the whole TCA-configuration for the child-object (eventlocation).
+
+.. code-block:: php
+
+    'eventlocation' => [
+        'exclude' => false,
+        'label' => 'LLL:EXT:events/Resources/Private/Language/locallang_db.xlf:tx_events_domain_model_event.eventlocation',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['LLL:EXT:events/Resources/Private/Language/locallang_db.xlf:tx_events_domain_model_event.general.select', NULL, 'EXT:events/Resources/Public/Icons/tx_events_domain_model_eventlocation.gif'],
+            ],
+            'foreign_table' => 'tx_events_domain_model_eventlocation',
+            'size' => 1,
+            'minitems' => 1,
+            'maxitems' => 1,
+            'eval' => 'required'
+        ],
+    ],
