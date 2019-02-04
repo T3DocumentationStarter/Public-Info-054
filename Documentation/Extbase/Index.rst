@@ -10,7 +10,10 @@ Extbase
 Relations between tables
 ----------------------
 
-**There are several methods to realize realtions between tables. Here I give an overview after my experiences**
+**There are several methods to realize relations between tables. Here I give an overview after my experiences**
+
+1:1-relation
+~~~~~~~~~~~~~~~~~~~
 
 My extension (events) got the possibility to create child-objects (eventlocations) in the backend. So I added/extended these files in my extension-folder:
 
@@ -225,7 +228,7 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
     <?php
     return [
         'ctrl' => [
-            'title' => 'LLL:EXT:itl_events/Resources/Private/Language/locallang_db.xlf:tx_itlevents_domain_model_eventlocation',
+            'title' => 'LLL:EXT:events/Resources/Private/Language/locallang_db.xlf:tx_events_domain_model_eventlocation',
             'label' => 'title',
             'tstamp' => 'tstamp',
             'crdate' => 'crdate',
@@ -241,7 +244,7 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
                 'endtime' => 'endtime',
             ],
             'searchFields' => 'title',
-            'iconfile' => 'EXT:itl_events/Resources/Public/Icons/tx_itlevents_domain_model_eventlocation.gif'
+            'iconfile' => 'EXT:events/Resources/Public/Icons/tx_events_domain_model_eventlocation.gif'
         ],
         'interface' => [
             'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title',
@@ -278,8 +281,8 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
                     'items' => [
                         ['', 0],
                     ],
-                    'foreign_table' => 'tx_itlevents_domain_model_eventlocation',
-                    'foreign_table_where' => 'AND {#tx_itlevents_domain_model_eventlocation}.{#pid}=###CURRENT_PID### AND {#tx_itlevents_domain_model_eventlocation}.{#sys_language_uid} IN (-1,0)',
+                    'foreign_table' => 'tx_events_domain_model_eventlocation',
+                    'foreign_table_where' => 'AND {#tx_events_domain_model_eventlocation}.{#pid}=###CURRENT_PID### AND {#tx_events_domain_model_eventlocation}.{#sys_language_uid} IN (-1,0)',
                 ],
             ],
             'l10n_diffsource' => [
@@ -342,7 +345,7 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
             ],
             'title' => [
                 'exclude' => true,
-                'label' => 'LLL:EXT:itl_events/Resources/Private/Language/locallang_db.xlf:tx_itlevents_domain_model_event.title',
+                'label' => 'LLL:EXT:events/Resources/Private/Language/locallang_db.xlf:tx_events_domain_model_event.title',
                 'config' => [
                     'type' => 'input',
                     'size' => 30,
@@ -356,3 +359,6 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
             ],
         ],
     ];
+
+Here you can see that we need the connection to the parent object via the passthrough declaration.
+
