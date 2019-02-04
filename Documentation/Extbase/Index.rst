@@ -407,3 +407,47 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
             'eval' => 'required'
         ],
     ],
+
+1:n-relation
+~~~~~~~~~~~~~~~~~~~
+
+To realize the 1:n-realation, which means that one parent object is related to one or more multiple to other parent objects related child objects, we need to configure another renderType in the TCA-configuration of the parent object.
+
+tx_events_domain_model_event.php
+===================
+
+Afterwards we need the whole TCA-configuration for the child-object (eventlocation).
+
+.. code-block:: php
+
+    'eventlocation' => [
+        'exclude' => false,
+        'label' => 'LLL:EXT:_events/Resources/Private/Language/locallang_db.xlf:tx_events_domain_model_event.eventlocation',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectMultipleSideBySide',
+            'MM' => 'tx_events_domain_model_event_eventlocation_mm',
+            'foreign_table' => 'tx_events_domain_model_eventlocation',
+            'minitems' => 1,
+            'maxitems' => 3
+        ],
+    ],
+
+Of courde we need to add the new needed mm-table in the sql-declaration file
+
+exttables.sql
+===================
+
+.. code-block:: php
+
+    #
+    # Table structure for table 'tx_events_domain_model_event_eventlocation_mm'
+    #
+    CREATE TABLE tx_events_domain_model_event_eventlocation_mm (
+        uid_local int(11) DEFAULT '0' NOT NULL,
+        uid_foreign int(11) DEFAULT '0' NOT NULL,
+        sorting int(11) DEFAULT '0' NOT NULL,
+        KEY uid_local (uid_local),
+        KEY uid_foreign (uid_foreign)
+    );
+
