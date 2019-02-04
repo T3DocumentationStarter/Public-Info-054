@@ -362,3 +362,15 @@ Afterwards we need the whole TCA-configuration for the child-object (eventlocati
 
 Here you can see that we need the connection to the parent object via the passthrough declaration.
 
+locallang_db.xlf and gif
+===================
+
+Of course we need thr language-file for the labels and the gif to have a nice icon.
+
+Output
+===================
+
+After all these configuration we got the possibility to add childobjects direct in the create/edit-form of the parent object (event)
+
+.. figure:: ../Images/eventlocation_add.png
+   :alt: Add-Button in backend
