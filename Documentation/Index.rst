@@ -40,18 +40,17 @@ __ https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-I
 
 .. attention::
 
-   This is my private documentation library, where I collect my Codesnippets and knowledge. Good parts which I wanna share I will give to Martin and der Documentatio-Team to put that into the main-documentation.
+   This is my private documentation-library, where I collect my sodesnippets and knowledge. Good parts which I wanna share, I will give to Martin and der Documentation-Team, to put that into the main-documentation.
 
 ---------------------------------------------
 
 
 .. _Infos von Martin:
 
-
-     Wir führen auch eine Liste `"Wer ist wo?" hier
-     <https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/Index.html#who-is-where>`__.
+Wir führen auch eine Liste `"Wer ist wo?" hier
+<https://docs.typo3.org/typo3cms/drafts/github/T3DocumentationStarter/Public-Info-001/TeachingDocs/StarterManuals/Index.html#who-is-where>`__.
       
-      Wenn mir mehr einfällt oder Fragen auftauchen schreibe ich mehr in der
+Wenn mir mehr einfällt oder Fragen auftauchen schreibe ich mehr in der
 `Mastervorlage des Starter-Projektes`__. Dort kann man also bei Bedarf
 reinschauen.
 
