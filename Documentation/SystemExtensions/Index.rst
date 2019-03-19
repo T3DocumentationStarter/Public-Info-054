@@ -135,7 +135,7 @@ Shows the frontend webpage inside the backend frameset.
 
 lowlevel
 ~~~~~~~~~~~~~~~~~~~
-Shows the a module in tehe backend to browse the TYPO3_CONF_VARS
+Shows a module "configuration" in the backend to browse the TYPO3_CONF_VARS
 
 
 
