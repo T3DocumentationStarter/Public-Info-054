@@ -135,7 +135,7 @@ Shows the frontend webpage inside the backend frameset.
 
 lowlevel
 ~~~~~~~~~~~~~~~~~~~
-Shows a module "configuration" in the backend to browse the TYPO3_CONF_VARS
+Enables the 'Config' and 'DB Check' modules for technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.
 
 
 
